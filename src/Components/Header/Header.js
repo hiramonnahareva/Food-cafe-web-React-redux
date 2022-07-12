@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import { NavLink, Link} from 'react-router-dom';
 import { Container } from 'reactstrap';
 import logo from '../../Assets/logo.png';
@@ -25,8 +25,10 @@ const navLink = [
 }
 ]
 const Header = () => {
+    const menuRef = useRef(null)
+    const toggleMenu = () => menuRef.current.classList.toggle('show_menu')
     return (
-        <header>
+        <header className='header_shrink'>
             <Container>
             <div className='nav_wripper d-flex align-items-center justify-content-between'>
             <div className='logo d-flex align-items-center gap-2'>
@@ -34,11 +36,12 @@ const Header = () => {
                     <h4 className='title'>Food Cafe</h4>
                 </div>
                 {/* ---------- menu -------- */}
-                <div className="navigation">
+                <div className="navigation" ref={menuRef}>
                     <div className="menu d-flex align-items-center gap-5">
                         {
                             navLink.map((item, index) => (
                                 <NavLink 
+                                onClick={toggleMenu}
                                 to={item.path} 
                                 key={index}
                                 className={(navActive) => navActive.isActive ? 'activeMenu' : '' }
@@ -57,7 +60,7 @@ const Header = () => {
                         <span className='user_icon'>
                             <Link to='/login'><BiUser/></Link>
                         </span>
-                        <span className='mobile_menu'>
+                        <span className='mobile_menu' onClick={toggleMenu}>
                             <BiMenu/>
                         </span>
                     </div>

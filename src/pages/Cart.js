@@ -2,7 +2,8 @@ import React from 'react'
 import { Row, Col, Table, Container } from 'reactstrap'
 import CommonSection from '../Components/CommonSection/CommonSection'
 import Helmet from '../Components/Helmet/Helmet';
-import image from '../Assets/CartBanner.png'
+import image from '../Assets/CartBanner.png';
+import '../Styles/Cart.css';
 
 function Cart() {
   return (

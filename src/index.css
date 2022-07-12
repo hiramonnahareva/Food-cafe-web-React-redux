@@ -29,6 +29,10 @@ h2{
   font-weight: 600;
   color: #212245;
 }
+p{
+  font-family: 'RocknRoll One', sans-serif !important;
+  font-weight: 300;
+}
 section{
   padding: 60px 0px;
 }

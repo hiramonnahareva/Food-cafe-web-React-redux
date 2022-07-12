@@ -1,0 +1,39 @@
+
+.banner_title{
+    font-size: 2.5rem;
+}
+.banner-right{
+    padding-top: 70px;
+}
+.banner_title span{
+    color: #EF0C0C;
+}
+.banner_content>p {
+    font-size: 1.1rem;
+    line-height: 30px;
+    color: #777777;
+}
+.banner_btns button {
+    border: none;
+    outline: none;
+    padding: 7px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.order_btn {
+    background: #EF0C0C;
+    color: white;
+    transition: 0.3s ease-in;
+}
+.order_btn:hover{
+    background: #282831 ;
+}
+.all_foods_btn{
+    background: transparent;
+    color: #EF0C0C;
+    border: 1px solid #EF0C0C !important;
+}
+.all_foods_btn:hover{
+    background: #282831 ;
+    color: white !important;
+}
