@@ -1,9 +1,13 @@
 import React from 'react';
-import {Row, Col} from 'reactstrap';
+import {Row, Col, Container} from 'reactstrap';
 import Helmet from '../Components/Helmet/Helmet';
 import bannerImg from '../Assets/Take Away-pana.png';
 import '../Styles/Home.css'
 import { Link } from 'react-router-dom';
+import Category from '../Components/Category/Category';
+import FoodCard from '../Components/Foods/FoodCard';
+import products from '../FackData/Products';
+
 
 const Home = () => {
     return (
@@ -27,11 +31,36 @@ const Home = () => {
                         <img className='w-100 ms-5' src={bannerImg} alt="" />
                     </div>
                     </Col>
-                    <Col lg='6' md='6'>
-                    </Col>
-                    <Col lg='6' md='6'>
-                    </Col>
                 </Row>
+            </section>
+            <Category></Category>
+            <section>
+            <Container>
+                <Row>
+                    <Col lg='12' className="text-center">
+                        <h2>Popular Foods</h2>
+                    </Col>
+                    <Col lg='12'>
+                        <div className="food_Category">
+                            {/* <button className='all_btn button'>All</button> */}
+                            <button className='button'>Breackfast</button>
+                            <button className='button'>Lunch</button>
+                            <button className='button'>Denner</button>
+                        </div>
+                    </Col>
+                        {
+                            products.map(item => (
+                                <Col lg='4' md='4' className='Food_card'>
+                               <FoodCard key={item.id} item={item}>
+
+                        </FoodCard>
+                    </Col>
+                            ))
+                        }
+
+                        
+                </Row>
+            </Container>
             </section>
         </div>
     );

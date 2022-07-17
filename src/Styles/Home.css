@@ -37,3 +37,28 @@
     background: #282831 ;
     color: white !important;
 }
+.food_Category {
+    height: 40px;
+    text-align: center;
+    gap: 4px;
+}
+.food_Category>.button{
+   
+    margin: 0 20px ;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+
+    background: white;
+   
+}
+.food_Category>.button:hover{
+    border-bottom: #EF0C0C solid 3px;
+    border-radius: 0;
+    color: #EF0C0C;
+}
+.Food_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
