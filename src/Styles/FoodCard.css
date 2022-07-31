@@ -16,11 +16,28 @@
     margin: 20px 0;
     transition: .2s;
 }
-.product_img:hover{
+/* .product_img:hover{
     transform: scale(0.7);
     z-index: 0;
-}
+} */
 
 .product_price {   
     font-size: 19px;
+}
+.Product_describe{
+    color: gray;
+}
+.add_to_cart_btn{
+    margin: 10px 0px 10px 50px;
+    border: none;
+    outline: none;
+    padding: 7px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #EF0C0C;
+    color: white;
+    transition: 0.3s ease-in;
+}
+.add_to_cart:hover{
+    background: #282831 ;
 }

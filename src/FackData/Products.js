@@ -29,7 +29,7 @@ const foods = [
         image1: Breakfast_img_1, 
         image2: Breakfast_img_2, 
         image3: Breakfast_img_3, 
-        category: 'breakfast',
+        category: 'Breakfast',
         describe: 'How we dream about our future',
     },
     {
@@ -39,7 +39,7 @@ const foods = [
         image1: Breakfast_img_2, 
         image3: Breakfast_img_3, 
         image4: Breakfast_img_4, 
-        category: 'breakfast',
+        category: 'Breakfast',
         describe: 'How we dream about our future',
     },
     {
@@ -49,7 +49,7 @@ const foods = [
         image1: Breakfast_img_3, 
         image4: Breakfast_img_4, 
         image5: Breakfast_img_5,  
-        category: 'breakfast',
+        category: 'Breakfast',
         describe: 'How we dream about our future',
     },
     {
@@ -59,7 +59,7 @@ const foods = [
         image1: Breakfast_img_4, 
         image2: Breakfast_img_5, 
         image3: Breakfast_img_6, 
-        category: 'breakfast',
+        category: 'Breakfast',
         describe: 'How we dream about our future',
     },
     {
@@ -69,7 +69,7 @@ const foods = [
         image1: Breakfast_img_5, 
         image3: Breakfast_img_6, 
         image4: Breakfast_img_1, 
-        category: 'breakfast',
+        category: 'Breakfast',
         describe: 'How we dream about our future',
     },
     {
@@ -79,7 +79,7 @@ const foods = [
         image1: Breakfast_img_6, 
         image4: Breakfast_img_1, 
         image5: Breakfast_img_2,  
-        category: 'breakfast',
+        category: 'Breakfast',
         describe: 'How we dream about our future',
     },
     {
